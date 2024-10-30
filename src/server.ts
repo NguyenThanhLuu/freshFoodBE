@@ -20,6 +20,9 @@ app.use("/api/products", productsRouter);
 app.use("/api/users", usersRouter);
 app.use("/api/orders", ordersRouter);
 app.use("/api/admin", adminRouter);
+app.use("/api/test", (req, res) => {
+  res.send({ message: "test successful" });
+});
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
