@@ -9,7 +9,7 @@ import {
 import auth from "../middlewares/auth.mid";
 
 const router = Router();
-router.use(auth);
+// router.use(auth);
 router.get("/", getProducts);
 
 router.get(
