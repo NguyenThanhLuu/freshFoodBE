@@ -1,38 +1,45 @@
-# Tên Dự Án: FreshFood API Backend
+# FreshFood API Backend
 
-* [Node.js](nodejs.org)
-* [Express.js](expressjs.com)
-* [MongoDB](www.mongodb.com)
+[![Node.js](https://img.shields.io/badge/Node.js-20.x-green)](https://nodejs.org)  
+[![Express.js](https://img.shields.io/badge/Express.js-4.x-lightgrey)](https://expressjs.com)  
+[![MongoDB](https://img.shields.io/badge/MongoDB-7.x-brightgreen)](https://www.mongodb.com)
 
-## Mô Tả
+## Description
+This is the **backend system** for a fresh food delivery application, built with **Node.js** and **Express.js** following the **MVC (Model-View-Controller)** architecture.
 
-Dự án này là hệ thống backend (phụ trợ) cho một ứng dụng đặt thực phẩm tươi sống, được xây dựng bằng Node.js và framework Express.js theo mô hình MVC (Model-View-Controller). 
-Nó cung cấp các API RESTful để quản lý sản phẩm, đơn hàng, xác thực người dùng và các chức năng khác, phục vụ cho ứng dụng frontend.
+It provides a complete set of **RESTful APIs** to manage products, orders, user authentication, and other core features, serving as the backend for the frontend application.
 
-## Tính Năng
+## Features
+- Secure user authentication (register, login, JWT-based)
+- Full CRUD operations for categories and fresh food products
+- Shopping cart and order placement functionality
+- Order management (status updates, history, etc.)
+- Clean MVC structure – easy to maintain and extend
+- Input validation & error handling
+- Environment-based configuration
 
-*   Xác thực người dùng an toàn (đăng ký, đăng nhập, JWT).
-*   Quản lý danh mục và sản phẩm thực phẩm tươi sống (CRUD).
-*   Chức năng giỏ hàng và đặt hàng.
-*   Quản lý đơn hàng (cập nhật trạng thái, v.v.).
-*   Triển khai theo mô hình MVC rõ ràng, dễ bảo trì.
+## API Usage
+The frontend application interacts with the backend through the following RESTful endpoints.  
+For testing, you can use tools like [Postman](https://www.postman.com) or Insomnia.
 
-## Sử Dụng API
+## Tech Stack
+| Technology           | Purpose                              |
+|----------------------|--------------------------------------|
+| Node.js              | JavaScript runtime                   |
+| Express.js           | Web framework                        |
+| MongoDB              | NoSQL database                       |
+| Mongoose             | MongoDB object modeling              |
+| JSON Web Tokens (JWT)| Authentication & authorization       |
+| bcrypt               | Password hashing                     |
+| dotenv               | Environment variables management     |
 
-Ứng dụng frontend có thể tương tác với backend thông qua các API endpoint sau. Để kiểm thử, bạn nên sử dụng các công cụ như [Postman](www.postman.com) hoặc Insomnia.
 
-## Công Nghệ Sử Dụng
+## Author
+**Nguyen Thanh Luu**
 
-*   [Node.js](nodejs.org): Môi trường runtime JavaScript.
-*   [Express.js](expressjs.com): Web framework cho Node.js.
-*   [MongoDB](www.mongodb.com): Cơ sở dữ liệu NoSQL.
-*   [Mongoose](mongoosejs.com): Thư viện mô hình hóa dữ liệu MongoDB.
-*   [JSON Web Token (JWT)](jwt.io): Để xác thực và phân quyền.
+- LinkedIn: [https://linkedin.com/in/nguyen-thanh-luu-25321b219](https://www.linkedin.com/in/nguyen-thanh-luu-25321b219/)
+- Email: nguyenthanhluu181097@gmail.com
 
-## Tác Giả
+## License
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
-*   Nguyen Thanh Luu
-
-## Giấy Phép
-
-Dự án này được cấp phép theo Giấy phép [MIT](opensource.org) - xem file [LICENSE](LICENSE) để biết chi tiết.
